@@ -1,0 +1,123 @@
+
+  <!DOCTYPE html>
+<html>
+   <head>
+    <title>LIBRO NEGRO</title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" 
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilosF.css">
+    <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" 
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+   </head>
+<body>
+<header>
+    <div class="nav-container">
+        <nav class="nav-checkbox">
+            <a href="index.html" class="logo">LIBRO NEGRO</a>
+            <input id="tab-nav" type="checkbox" class="tab-nav" name="tabs">
+            <label for="tab-nav" class="tab-nav-label">Menu</label>
+            <ul class="tab-content">
+
+               <li><a id="entrar" href="login.html"  >iniciar sesion</a></li> 
+
+
+            <li><a href="#" onclick="cambiadisplay('uno');">UNIRTE</a></li>
+              <li> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://ricacrdocs.000webhostapp.com">Pagina-Personal</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section  id="uno" style="display:block;"  class="content">
+
+    <object  data="panel.html" height="101%" width="101%" name="contenedor"></object>
+
+</section>
+<section id="dos" style="display:none;"  class="content"  >
+     <div class="contenedor">
+
+        <h1>CONTACTO</h1>
+
+        <div class="contenido">
+
+            <div class="info">
+
+                <div class="col">
+                    <i class="icono fas fa-map-marker-alt"></i>
+                    <p>Av. 26 de julio Nro. 8 Ciudad - País</p>
+                </div>
+
+                <div class="col">
+                    <i class="icono fas fa-envelope"></i>
+                    <p>consulta@correo.com</p>
+                </div>
+
+                <div class="col">
+                    <i class="icono fas fa-phone"></i>
+                    <p>(01) 6262-222 <br> (01) 3343-543</p>
+                </div>
+
+                <div class="redes-s">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                </div>
+
+            </div>
+
+            <form class="formulario" >
+
+                <input type="text" name="nombre" placeholder="Nombre o alias" id="nombre">
+                <input type="text" name="correo" placeholder="Correo electróico" id="correo">
+                <input type="text" name="asunto" placeholder="nombre de tu  historia" id="asunto">
+                <textarea name="mensaje" id="mensaje" placeholder="trama de tu historia"></textarea>
+                <button type="button" onclick="validarFormulario()">Enviar</button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+    
+</section>
+
+
+
+<script src="js/login.js"></script>
+
+
+<script type="text/javascript">
+  function cambiadisplay(id)  
+{  
+  
+if (document.getElementById('uno').style.display=='block') {  
+document.getElementById('uno').style.display='none'; 
+document.getElementById('dos').style.display='block';  
+}
+  
+  
+}  
+</script>
+
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/app.js"></script>
+   
+
+
+
+</body>
+</html>
+  
+  
+

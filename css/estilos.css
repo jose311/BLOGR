@@ -1,0 +1,17 @@
+*{padding:0;margin:0;}
+
+body{background:#000;}
+#main{padding-top:30px;}
+
+.pagina{
+	padding:20px;
+	height:500px;
+	text-align:justify;
+	color:#666;
+}
+.principal{
+	background:#6e6e6e;
+	color:#fff;
+}
+h2{font:lighter 20px Verdana; padding:10px;}
+p{font:lighter 15px Verdana;}
